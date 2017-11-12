@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Demo</title>
+        <meta name="author" content="demo">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="description" content="mondogrosso.com">
+        <meta property="og:title" content="Demo" />
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/assets/img/ogp.png" />
+        <meta property="og:site_name" content="Demo />
+        <!-- <meta name="twitter:card" content="summary_large_image" /> -->
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+<!-- Google Tag Manager -->
+<script></script>
+<!-- End Google Tag Manager -->
+        <div class="loading-container" id="loading">
+            <div class="ldg__progressbar" id="loading-bar"></div>
+        </div>
+        <header class="header-container" id="header">
+            <div class="hdr__inner">
+                <h1 class="hdr__logo"><a href="#">Demo</a></h1>
+                <div class="hdr__border"></div>
+                <nav class="hdr__menu-container" id="header-menu">
+                    <ul class="hdr__menu__items">
+                        <li class="hdr__menu__item"><a href="#">Home</a></li>
+                        <li class="hdr__menu__item"><a href="#Topic1">Topic1</a></li>
+                        <li class="hdr__menu__item"><a href="#Topic2">Topic2</a></li>
+                        <li class="hdr__menu__item"><a href="#Topic3">Topic3</a></li>
+                        <li class="hdr__menu__item"><a href="#Topic4">Topic4</a></li>
+                        <li class="hdr__menu__item"><a href="#Topic5">Topic5</a></li>
+                        <!-- <li class="hdr__menu__item"><a href="./schedule">Schedule</a></li> -->
+                        <!-- <li class="hdr__menu__item"><a href="http://shop.mu-mo.net/list1/261403" target="_blank">Goods</a></li> -->
+
+                        <!-- <li class="hdr__menu__item--sns"> -->
+                            <!-- <a class="hdr__menu__sns--twitter" target="_blank" href="http://twitter.com/share?url=http://www.mondogrosso.com/&amp;text=MONDO GROSSO&amp;hashtags=mondogrosso"></a> -->
+                            <!-- <a class="hdr__menu__sns--facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.mondogrosso.com/"></a> -->
+                        <!-- </li> -->
+                    </ul>
+                </nav>
+                <div class="hdr__menu__open-button" id="menu-open-button">
+                    <img src="assets/img/btn_menu@1x.png" srcset="assets/img/btn_menu@1x.png 1x,assets/img/btn_menu@2x.png 2x,assets/img/btn_menu@3x.png 3x">
+                </div>
+                <div class="hdr__menu__close-button" id="menu-close-button" style="display: none;">
+                    <img src="assets/img/btn_menu-close@1x.png" srcset="assets/img/btn_menu-close@1x.png 1x,assets/img/btn_menu-close@2x.png 2x,assets/img/btn_menu-close@3x.png 3x">
+                </div>
+            </div>
+        </header>
+        <div class="page-container" id="page">
+            <main class="main-container">
+                <div class="video-container" id="top">
+<style>
+div.slider { margin:0; padding:0 0 20px 0; }
+div.slider div.slick-list {}
+div.slider div.slick-list div.slick-track {}
+div.slider div.slick-list div.slick-track div.slick-slide {}
+div.slider div.slick-list div.slick-track div.slick-slide.slide {}
+div.slider div.slick-list div.slick-track div.slick-slide.slide a { display:block; position:relative; }
+div.slider div.slick-list div.slick-track div.slick-slide.slide a p {}
+div.slider div.slick-list div.slick-track div.slick-slide.slide a p img { width:100%; }
+div.slider div.slick-list div.slick-track div.slick-slide.slide a span { display:block; position:absolute; left:0; right:0; top:0; bottom:0; width:174px; height:174px; margin:auto; }
+div.slider ul.slick-dots { bottom:0; line-height:0; }
+div.slider ul.slick-dots li { width:8px; height:8px; margin:0 8px 0 8px; }
+div.slider ul.slick-dots li button { width:8px; height:8px; }
+div.slider ul.slick-dots li button:before { width:8px; height:8px; content:''; background:#7F7F7F; border-radius:8px; opacity:1; transition:all 0.25s linear; }
+div.slider ul.slick-dots li button:hover:before { background:#000000; }
+div.slider ul.slick-dots li.slick-active button:before { background:#000000; }
+</style>
+<link href="./assets/js/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css">
+<link href="./assets/js/slick/slick.css" rel="stylesheet" type="text/css">
+<link href="./assets/js/slick/slick-theme.css" rel="stylesheet" type="text/css">
+<script src="./assets/js/jquery.js"></script>
+<script src="./assets/js/jquery.easing.js"></script>
+<script src="./assets/js/fancybox/jquery.fancybox.js"></script>
+<script src="./assets/js/slick/slick.js"></script>
+<script>
+$(window).on('load', function(){
+	$('div.slider').slick({
+		arrows:false,
+		dots:true,
+		draggable:false,
+		pauseOnHover:false,
+		autoplay:true,
+		autoplaySpeed:7000,
+		speed:1000,
+		cssEase:'ease-in-out',
+	  responsive:[{ breakpoint:768, settings:{ draggable:true, speed:500 }}]
+	});
+	$('a.fancyMovie').click(function(e){
+		e.preventDefault();
+		if(!window.innerWidth){
+			if(768 < document.body.clientWidth) responsive = 'pc';
+			if(document.body.clientWidth <= 768) responsive = 'sp';
+			return;
+		}
+		if(768 < window.innerWidth) responsive = 'pc';
+		if(window.innerWidth <= 768) responsive = 'sp';
+		if(responsive == 'pc') $.fancybox({ href:$(this).attr('href'), 'width':853, 'height':480, 'type':'iframe' });
+		if(responsive == 'sp') $.fancybox({ href:$(this).attr('href'), 'width':'100%', 'height':$(window).width() * 0.56, 'autoSize':false, 'type':'iframe' });
+	});
+});
+</script>
+<div class="slider"><div class="slide"><a href="#" class="fancyMovie"><p><img src="assets/img/demo.jpg"></p><span><img src="./assets/img/movie.png"></span></a></div>
+<div class="slide"><a href="#" class="fancyMovie"><p><img src="assets/img/demo.jpg"></p><span><img src="./assets/img/movie.png"></span></a></div>
+<div class="slide"><a href="#" class="fancyMovie"><p><img src="assets/img/demo.jpg"></p><span><img src="./assets/img/movie.png"></span></a></div>
+<div class="slide"><a href="#" class="fancyMovie"><p><img src="assets/img/demo.jpg"></p><span><img src="./assets/img/movie.png"></span></a></div>
+<div class="slide"><a href="#" class="fancyMovie"><p><img src="assets/img/demo.jpg"></p><span><img src="./assets/img/movie.png"></span></a></div>
+
+</div>
+	<div class="branding-container">
+		<div class="bdg__ditail">
+			<h1 class="bdg__dtl__catchcopy">
+				<span class="bdg__dtl__cpy__line1">Title</span>
+				<span class="bdg__dtl__cpy__line2">Description</span>
+				<span class="bdg__dtl__cpy__line3">Datetime</span>
+			</h1>
+			<div class="bdg__dtl__button"><a href="#buy">desc1</a></div>
+			<div class="bdg__dtl__button"><a href="#" target="blank">dsec2</a></div>
+		</div>
+		<div class="bdg__jacket">
+			<img src="assets/img/demo.jpg" srcset="assets/img/demo.jpg 1x,assets/img/demo.jpg 2x,assets/img/demo.jpg 3x">
+		</div>
+	</div>
+</div>
+<section class="concept-container" id="Topic1">
+	<h2 class="ctr__title">
+		<span class="ctr__ttl__text">Topic1</span>
+	</h2>
+	<div class="ctr__content">
+		<p>
+			<strong>Desc。
+				<br>content1。
+				<br>content2。</strong>
+		</p>
+	</div>
+</section>
+<style>
+#interview {}
+#interview .ctr__content {}
+#interview .ctr__content ul {}
+#interview .ctr__content ul li {}
+#interview .ctr__content ul li a { display:block; width:33.33%; padding:10px 0 10px 0; text-align:center; font-size:0; line-height:0; border:solid 1px #000000; }
+#interview .ctr__content ul li a:hover { opacity:0.5; }
+#interview .ctr__content ul li:nth-of-type(2) { display:none; }
+#interview .ctr__content div.items { display:none; padding:40px 0 0 0; }
+#interview .ctr__content div.items div.item { padding:0 0 80px 0; }
+#interview .ctr__content div.items div.item div.nav { padding:0 0 40px 0; }
+</style>
+<script>
+$(window).on('load', function(){
+	$('#interview .ctr__content ul li:eq(0) a').click(function(){
+		$('#interview .ctr__content ul li:eq(0)').hide();
+		$('#interview .ctr__content ul li:eq(1)').show();
+		$(this).closest('.ctr__content').find('div.items').animate({ height:'show' }, { duration:500, easing:'easeOutCubic' });
+		$('html, body').animate({ scrollTop:$(this).closest('#interview').offset().top - 44 }, { duration:500, easing:'easeOutCubic' });
+	});
+	$('#interview .ctr__content ul li:eq(1) a').click(function(){
+		$('#interview .ctr__content ul li:eq(0)').show();
+		$('#interview .ctr__content ul li:eq(1)').hide();
+		$(this).closest('.ctr__content').find('div.items').animate({ height:'hide' }, { duration:500, easing:'easeOutCubic' });
+		$('html, body').animate({ scrollTop:$(this).closest('#interview').offset().top - 44 }, { duration:500, easing:'easeOutCubic' });
+	});
+});
+</script>
+<section class="concept-container" id="Topic2">
+<h2 class="ctr__title">
+<span class="ctr__ttl__text">Topic2</span>
+</h2>
+<div class="ctr__content">
+<p><strong>Desc</strong></p>
+<div class="items">
+<div class="item">
+<div class="nav"><span style="font-size:18px;font-weight:900;">
+</div>
+</div>
+<!-- <ul> -->
+<!-- <li><a href="javascript:void(0);"><img src="./assets/img/btn_pager_arrow-down@1x.png" srcset="./assets/img/btn_pager_arrow-down@1x.png 1x,./assets/img/btn_pager_arrow-down@2x.png 2x,./assets/img/btn_pager_arrow-down@3x.png 3x"></a></li> -->
+<!-- <li><a href="javascript:void(0);"><img src="./assets/img/btn_pager_arrow-up@1x.png" srcset="./assets/img/btn_pager_arrow-up@1x.png 1x,./assets/img/btn_pager_arrow-up@2x.png 2x,./assets/img/btn_pager_arrow-up@3x.png 3x"></a></li> -->
+<!-- </ul> -->
+</div>
+</section>
+<section class="release-infomation-container" id="Topic3">
+	<h2 class="ctr__title">
+		<span class="ctr__ttl__text">Topic3</span>
+	</h2>
+
+	<section class="rls__buy" id="buy">
+		<div class="rls__buy__section">
+			<!--<h3 class="rls__buy__sct__title">title</h3>-->
+			<ul class="rls__buy__sct__items">
+				<li class="rls__buy__sct__item"><a href="#" target="_blank">Link1</a></li>
+				<li class="rls__buy__sct__item"><a href="#" target="_blank">Link2</a></li>
+				<li class="rls__buy__sct__item"><a href="#" target="_blank">Link3</a></li>
+				<li class="rls__buy__sct__item"><a href="#" target="_blank">Link4</a></li>
+		   </ul>
+		</div>
+
+	</section>
+                    
+</section>
+
+<section class="news-container" id="Topic4">
+	<h2 class="ctr__title">
+		<span class="ctr__ttl__text">Topic4</span>
+	</h2>
+	<div class="nws__list">
+		<ul class="nws__lst__items">
+			<li class="nws__lst__item">
+			<a href="#">
+			<span class="nws__lst__date">datetime</span>
+			<span class="nws__lst__title">『News』title！</span>
+			</a>
+			</li>
+		</ul>
+	</div>
+	<!-- <div class="nws__more"><a href="/news/">See More</a></div> -->
+</section>
+<section class="history-container" id="Topic5">
+	<h2 class="ctr__title">
+		<span class="ctr__ttl__text">Topic5</span>
+	</h2>
+	<div class="hsy__list">
+		<ul class="hsy__lst__items">
+			<li class="hsy__lst__item">
+				<a href="#" target="_blank">
+					<img src="assets/img/demo.jpg" alt="desc">
+				</a>
+			</li>
+			<li class="hsy__lst__item">
+				<a href="#" target="_blank">
+					<img src="assets/img/demo.jpg"  alt="desc">
+				</a>
+			</li>
+		</ul>
+
+		<ul class="hsy__lst__items" style="margin-top:15px;">
+			<li class="hsy__lst__item">
+				<a href="#" target="_blank">
+					<img src="assets/img/demo.jpg"  alt="dsec">
+				</a>
+			</li>
+			<li class="hsy__lst__item">
+				<a href="#" target="_blank">
+					<img src="assets/img/demo.jpg"  alt="dsec">
+				</a>
+			</li>
+
+		</ul>
+
+	</div>
+</section>
+</main>
+<footer class="footer-container" id="header">
+	<div class="ftr__navi">
+		<ul class="ftr__navi__items">
+			<li class="ftr__navi__item"><a href="http://mondogrosso.com/">Home</a></li>
+			<li class="ftr__navi__item"><a href="#Topic1">Topic1</a></li>
+			<li class="ftr__navi__item"><a href="#Topic2">Topic2</a></li>
+			<li class="ftr__navi__item"><a href="#Topic3">Topic3</a></li>
+			<li class="ftr__navi__item"><a href="#Topic4">Topic4</a></li>
+			<li class="ftr__navi__item"><a href="#Topic5">Topic5</a></li>
+		</ul>
+	</div>
+	<div class="ftr__official"><a href="#" target="_blank">WEBSITE</a></div>
+	<div class="ftr__copyright">
+		<small>©2017 All rights reserved.</small>
+	</div>
+</footer>
+</div>
+        <script>
+           
+        </script>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>
